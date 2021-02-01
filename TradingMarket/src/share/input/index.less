@@ -1,0 +1,28 @@
+@import '../default';
+@prefixCls:s-input;
+
+.@{prefixCls} {
+  display:flex;
+  justify-content: space-between;
+  .@{prefixCls}-wrap{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex:1;
+    .@{prefixCls}-label{
+      margin-right: @size-10;
+    }
+    .@{prefixCls}-icon{
+      width:@size-20;
+      margin-right: @size-10;
+    }
+    .@{prefixCls}-input{
+      flex:1;
+      border:none;
+      height: @size-20+5;
+      font-size:@size-14;
+      background:@bc-body;
+      text-align: left;
+    }
+  }
+}

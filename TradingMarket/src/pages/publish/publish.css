@@ -1,0 +1,9 @@
+.publish-textarea::-webkit-input-placeholder{
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.am-image-picker-list{
+    padding:9px 9px 8px 0!important;
+}

@@ -1,0 +1,65 @@
+.s-list {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.s-list .s-list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.s-list .s-list-item .s-list-item-left {
+  display: flex;
+  align-items: center;
+}
+.s-list .s-list-item .s-list-item-left .s-list-item-left-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.s-list .s-list-item .s-list-item-left .s-list-item-left-text {
+  color: #333;
+}
+.s-list .s-list-item .s-list-item-right {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: #999;
+}
+.s-list .s-list-item .s-list-item-right .s-list-item-right-icon {
+  width: 20px;
+  height: 20px;
+}
+.s-list .s-list-item .s-list-item-right .s-list-item-left-text {
+  color: #ccc;
+}
+/*默认搜索框*/
+.s-list-no-border {
+  padding: 10px 0;
+}
+.s-list-no-border .s-list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.s-list-no-border .s-list-item .s-list-item-left {
+  display: flex;
+  align-items: center;
+}
+.s-list-no-border .s-list-item .s-list-item-left .s-list-item-title {
+  color: #333;
+}
+.s-list-no-border .s-list-item .s-list-item-right {
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+.s-list-no-border .s-list-item .s-list-item-left-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.s-list-no-border .s-list-item .s-list-item-right-icon {
+  width: 20px;
+  height: 20px;
+}
+/*# sourceMappingURL=index.css.map */

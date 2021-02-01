@@ -1,0 +1,26 @@
+.s-input {
+  display: flex;
+  justify-content: space-between;
+}
+.s-input .s-input-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+.s-input .s-input-wrap .s-input-label {
+  margin-right: 10px;
+}
+.s-input .s-input-wrap .s-input-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+.s-input .s-input-wrap .s-input-input {
+  flex: 1;
+  border: none;
+  height: 25px;
+  font-size: 14px;
+  background: #f5f5f9;
+  text-align: left;
+}
+/*# sourceMappingURL=index.css.map */

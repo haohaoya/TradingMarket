@@ -1,0 +1,23 @@
+.index-product-left{
+    margin:0 0.09rem 0.15rem 0.18rem;
+    border: 0.08rem;
+    box-shadow: 0.03rem 0.03rem 0.03rem #ddd;
+    width:calc(50% - 0.27rem);
+    display: inline-block;
+    vertical-align: top;
+}
+.index-product-right{
+    margin:0 0.18rem 0.15rem 0.09rem;
+    border: 0.08rem;
+    box-shadow: 0.03rem 0.03rem 0.03rem #ddd;
+    width:calc(50% - 0.27rem);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.index-img{
+    border-top-left-radius: 0.1rem;
+    border-top-right-radius: 0.1rem;
+    height: 3.8rem;
+    width: 100%;
+}

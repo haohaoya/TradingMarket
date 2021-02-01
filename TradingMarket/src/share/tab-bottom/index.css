@@ -1,0 +1,38 @@
+.s-tab-bottom {
+  height: 50px;
+}
+.s-tab-bottom .s-tab-bottom-position-fixed {
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  z-index: 1000;
+}
+.s-tab-bottom .s-tab-bottom-tab {
+  color: #999;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.s-tab-bottom .s-tab-bottom-tab-active {
+  color: #3f743e;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.s-tab-bottom .s-tab-bottom-icon {
+  width: 22px;
+}
+.s-tab-bottom .s-tab-bottom-span {
+  font-size: 12px;
+  margin-top: 3px;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,41 @@
+@import '../default';
+@prefixCls: s-button;
+.@{prefixCls} {
+  display: flex;
+  justify-content: center;
+  &-btn{
+    text-align: center;
+    height: (@size-40)-5;
+    line-height: (@size-40)-5;
+    border:1px solid @c-main;
+    border-radius: @size-10;
+    color:@c-main;
+    width:30%;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  &-active{
+    background-color: #eee;
+  }
+}
+.@{prefixCls}-btn-fill{
+  height: @size-40;
+  line-height: @size-40;
+  background: @c-main;
+  color: @c-white;
+  border-radius: @size-10;
+  text-align: center;
+  font-size: @size-16;
+  font-weight: bold;
+}
+.@{prefixCls}-btn-half{
+  height: @size-40;
+  line-height: @size-40;
+  background: @c-main;
+  color: @c-white;
+  border-radius: @size-10;
+  text-align: center;
+  font-size: @size-16;
+  font-weight: bold;
+  width: 48%;
+}

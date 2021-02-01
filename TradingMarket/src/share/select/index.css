@@ -1,0 +1,73 @@
+.s-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.s-select .s-select-wrap {
+  display: flex;
+  align-items: center;
+}
+.s-select .s-select-wrap .s-select-arrow {
+  width: 20px;
+}
+.s-select .s-select-modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  text-align: center;
+  background: rgba(50, 50, 50, 0.5);
+}
+.s-select .s-select-modal .s-select-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  text-align: center;
+  background: #ffffff;
+}
+.s-select .s-select-modal .s-select-content .s-select-height {
+  height: 40px;
+}
+.s-select .s-select-modal .s-select-content .s-select-height .s-select-item {
+  color: #3f743e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  height: 40px;
+  line-height: 40px;
+}
+.s-select .s-select-modal .s-select-content .s-select-height .s-select-item .s-select-item-left {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.s-select .s-select-modal .s-select-content .s-select-height .s-select-item .s-select-item-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+.s-select .s-select-modal .s-select-content .s-select-height .s-select-item .s-select-item-tips {
+  margin-left: 10px;
+  color: #3f743e;
+}
+.s-select .s-select-modal .s-select-content .s-select-label {
+  height: 40px;
+  line-height: 40px;
+  color: #999;
+  border-top: 1px solid #ddd;
+}
+.s-select .s-select-modal .s-select-content .s-select-label-active {
+  height: 40px;
+  line-height: 40px;
+  color: #3f743e;
+  border-top: 1px solid #ddd;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,8 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/TradingMarket/node_modules
+
+# production
+/TradingMarket/build
+

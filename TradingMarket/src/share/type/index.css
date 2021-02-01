@@ -1,0 +1,17 @@
+.s-type {
+  overflow: scroll;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.s-type .s-type-item-active {
+  color: #3f743e;
+  font-weight: bold;
+  min-width: 50px;
+  font-size: 16px;
+}
+.s-type .s-type-item {
+  color: #333;
+  min-width: 50px;
+}
+/*# sourceMappingURL=index.css.map */

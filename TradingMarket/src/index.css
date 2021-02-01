@@ -1,0 +1,293 @@
+/*初始化样式*/
+body {
+  font: 400 14px/1.5 Arial;
+}
+* {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+body,
+button,
+form,
+html,
+input,
+label,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #f5f5f9 inset;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.cm-mt-009 {
+  margin-top: 0.09rem;
+}
+.cm-mt-0018 {
+  margin-top: 0.18rem;
+}
+.cm-mt-036 {
+  margin-top: 0.36rem;
+}
+.cm-mt-080 {
+  margin-top: 0.8rem;
+}
+.cm-ml-018 {
+  margin-left: 0.18rem;
+}
+.cm-mr-018 {
+  margin-right: 0.18rem;
+}
+.cm-mr-009 {
+  margin-right: 0.09rem;
+}
+.cm-mtb-009 {
+  margin-top: 0.09rem;
+  margin-bottom: 0.09rem;
+}
+.cm-mtb-018 {
+  margin-top: 0.18rem;
+  margin-bottom: 0.18rem;
+}
+.cm-mlr-018 {
+  margin-left: 0.18rem;
+  margin-right: 0.18rem;
+}
+.cm-m-018 {
+  margin: 0.18rem;
+}
+.cm-pt-018 {
+  padding-top: 0.18rem;
+}
+.cm-ptb-018 {
+  padding-top: 0.18rem;
+  padding-bottom: 0.18rem;
+}
+.cm-ptb-009 {
+  padding-top: 0.09rem;
+  padding-bottom: 0.09rem;
+}
+.cm-plr-009 {
+  padding-left: 0.09rem;
+  padding-right: 0.09rem;
+}
+.cm-plr-018 {
+  padding-left: 0.18rem;
+  padding-right: 0.18rem;
+}
+.cm-p-009 {
+  padding: 0.09rem;
+}
+.cm-p-018 {
+  padding: 0.18rem;
+}
+.cm-flex {
+  display: flex;
+}
+.cm-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.cm-flex-1 {
+  flex: 1;
+}
+.cm-flex-wrap {
+  flex-wrap: wrap;
+}
+.cm-jc-c {
+  justify-content: center;
+}
+.cm-jc-sa {
+  justify-content: space-around;
+}
+.cm-jc-sb {
+  justify-content: space-between;
+}
+.cm-jc-fe {
+  justify-content: flex-end;
+}
+.cm-ai-c {
+  align-items: center;
+}
+.cm-as-fe {
+  align-self: flex-end;
+}
+.cm-as-fs {
+  align-self: flex-start;
+}
+.cm-w-full {
+  width: 100%;
+}
+.cm-tx-l {
+  text-align: left;
+}
+.cm-tx-r {
+  text-align: right;
+}
+.cm-tx-c {
+  text-align: center;
+}
+.cm-c-main {
+  color: #3f743e;
+}
+.cm-c-white {
+  color: #fff;
+}
+.cm-c-333 {
+  color: #333;
+}
+.cm-c-666 {
+  color: #666;
+}
+.cm-c-999 {
+  color: #999;
+}
+.cm-bc-main {
+  background: #3f743e;
+}
+.cm-bc-white {
+  background: #fff;
+}
+.cm-bc-333 {
+  background: #333;
+}
+.cm-bc-666 {
+  background: #666;
+}
+.cm-bc-999 {
+  background: #999;
+}
+.cm-bc-ddd {
+  background: #ddd;
+}
+.cm-fs-020 {
+  font-size: 0.2rem;
+}
+.cm-fs-022 {
+  font-size: 0.22rem;
+}
+.cm-fs-024 {
+  font-size: 0.24rem;
+}
+.cm-fs-026 {
+  font-size: 0.26rem;
+}
+.cm-fs-028 {
+  font-size: 0.28rem;
+}
+.cm-fs-030 {
+  font-size: 0.3rem;
+}
+.cm-fw-bold {
+  font-weight: bold;
+}
+.cm-fw-height {
+  line-height: 0.4rem;
+}
+.cm-img-04 {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.cm-img-05 {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.cm-img-06 {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.cm-img-08 {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.cm-img-10 {
+  width: 1rem;
+  height: 1rem;
+}
+.cm-img-12 {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.cm-img-14 {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.cm-img-16 {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.cm-img-banner {
+  width: 100%;
+  height: 4rem;
+}
+.cm-border-ddd {
+  border: 1px solid #ddd;
+}
+.cm-border-bottom-ddd {
+  border-bottom: 1px solid #ddd;
+}
+.cm-border-top-eee {
+  border-top: 1px solid #eee;
+}
+.cm-border-bottom-eee {
+  border-bottom: 1px solid #eee;
+}
+.cm-border-radius-10 {
+  border-radius: 0.1rem;
+}
+.cm-border-radius-half {
+  border-radius: 50%;
+}
+.cm-space-line {
+  height: 0.18rem;
+  background: #eee;
+}
+.cm-btn-main {
+  background: #3f743e;
+  padding: 0.05rem 0.2rem;
+  color: #fff;
+  border-radius: 0.1rem;
+}
+.cm-btn-main-higher {
+  background: #3f743e;
+  padding: 0.05rem 0.2rem;
+  color: #fff;
+  border-radius: 0.1rem;
+}
+.cm-btn-border-333 {
+  padding: 0.05rem 0.2rem;
+  border: 1px solid #333;
+  color: #333;
+  border-radius: 0.1rem;
+}
+.cm-btn-border-main {
+  padding: 0.05rem 0.2rem;
+  border: 1px solid #3f743e;
+  color: #3f743e;
+  border-radius: 0.1rem;
+}
+.cm-btn-border-999 {
+  padding: 0.05rem 0.2rem;
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 0.1rem;
+}
+.cm-bottom-position {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 0.18rem;
+}
+/*# sourceMappingURL=index.css.map */

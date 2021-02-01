@@ -1,0 +1,44 @@
+@import '../default';
+@prefixCls:s-title;
+.@{prefixCls}{
+  height: @size-40;
+  .@{prefixCls}-wrap-home{
+    position: fixed;
+    background: @bc-main;
+    color: @bc-white;
+    left: 0;
+    right: 0;
+    height: @size-40;
+    line-height: @size-40;
+    text-align: center;
+    font-size: @size-16;
+    font-weight: bold;
+    z-index: 999;
+  }
+  .@{prefixCls}-left,.@{prefixCls}-right{
+    width: @size-50;
+  }
+  .@{prefixCls}-right{
+    text-align: right;
+    font-size: @size-14;
+  }
+  .@{prefixCls}-left-icon,.@{prefixCls}-right-icon{
+    width: @size-20;
+    vertical-align: middle;
+  }
+  .@{prefixCls}-wrap{
+    display: flex;
+    background: #f5f5f9;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: @size-40;
+    line-height: @size-40;
+    padding: 0 (@size-10)-1;
+    font-size: @size-16;
+    z-index: 999;
+    color: #333;
+  }
+}

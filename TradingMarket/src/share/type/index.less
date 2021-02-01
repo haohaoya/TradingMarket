@@ -1,0 +1,19 @@
+@import '../default';
+@prefixCls:s-type;
+
+.@{prefixCls} {
+  overflow:scroll;
+  padding:@size-20 0;
+  display:flex;
+  align-items: center;
+  .@{prefixCls}-item-active{
+    color:@bc-main;
+    font-weight:bold;
+    min-width: 50px;
+    font-size: @size-16;
+  }
+  .@{prefixCls}-item{
+    color:@bc-black;
+    min-width: 50px;
+  }
+}

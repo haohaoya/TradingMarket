@@ -1,0 +1,375 @@
+/*初始化样式*/
+@spacing:0.18rem;//元素之间的核心间距
+@theme-color:#3f743e;//项目主题颜色
+body{
+  font:400 14px/1.5 Arial;//初始化字体
+}
+*{
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;//在ios操作系统的手机中滑动更流畅
+}
+body, button, form, html, input, label, textarea{
+  margin:0;
+  padding:0;
+}
+//input被填充时的样式
+input:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 1000px #f5f5f9 inset;
+}
+//placeholder的字体颜色
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+  color:#999;
+}
+//Google Chrome浏览器中去掉滚动条
+::-webkit-scrollbar{
+  display: none;
+}
+//外边距
+.cm-mt-009{
+  margin-top:@spacing/2;
+}
+.cm-mt-0018{
+  margin-top:@spacing;
+}
+.cm-mt-036{
+  margin-top:@spacing*2;
+}
+.cm-mt-080{
+  margin-top:0.8rem;
+}
+
+.cm-ml-018{
+  margin-left: @spacing;
+}
+
+.cm-mr-018{
+  margin-right: @spacing;
+}
+.cm-mr-009{
+  margin-right: @spacing/2;
+}
+
+.cm-mtb-009{
+  margin-top: @spacing/2;
+  margin-bottom: @spacing/2;
+}
+.cm-mtb-018{
+  margin-top: @spacing;
+  margin-bottom: @spacing;
+}
+
+.cm-mlr-018{
+  margin-left: @spacing;
+  margin-right: @spacing;
+}
+
+.cm-m-018{
+  margin:@spacing;
+}
+//内边距
+.cm-pt-018{
+  padding-top:@spacing;
+}
+.cm-ptb-018{
+  padding-top:@spacing;
+  padding-bottom:@spacing;
+}
+.cm-ptb-009{
+  padding-top:@spacing/2;
+  padding-bottom:@spacing/2;
+}
+.cm-plr-009{
+  padding-left:@spacing/2;
+  padding-right:@spacing/2;
+}
+.cm-plr-018{
+  padding-left:@spacing;
+  padding-right:@spacing;
+}
+.cm-p-009{
+  padding:@spacing/2;
+}
+.cm-p-018{
+  padding:@spacing;
+}
+//布局
+.cm-flex{
+  display:flex;
+}
+.cm-flex-column{
+  display:flex;
+  flex-direction: column;
+}
+.cm-flex-1{
+  flex:1;
+}
+.cm-flex-wrap{
+  flex-wrap: wrap;
+}
+.cm-jc-c{
+  justify-content: center;
+}
+.cm-jc-sa{
+  justify-content: space-around;
+}
+.cm-jc-sb{
+  justify-content: space-between;
+}
+.cm-jc-fe{
+  justify-content: flex-end;
+}
+.cm-ai-c{
+  align-items: center;
+}
+.cm-as-fe{
+  align-self: flex-end;
+}
+.cm-as-fs{
+  align-self: flex-start;
+}
+.cm-w-full{
+  width: 100%;
+}
+.cm-tx-l{
+  text-align: left;
+}
+.cm-tx-r{
+  text-align: right;
+}
+.cm-tx-c{
+  text-align: center;
+}
+//字体颜色与背景色
+.cm-c-main{
+  color:@theme-color;
+}
+.cm-c-white{
+  color:#fff;
+}
+.cm-c-333{
+  color:#333;
+}
+.cm-c-666{
+  color:#666;
+}
+.cm-c-999{
+  color:#999;
+}
+.cm-bc-main{
+  background: @theme-color;
+}
+.cm-bc-white{
+  background: #fff;
+}
+.cm-bc-333{
+  background: #333;
+}
+.cm-bc-666{
+  background: #666;
+}
+.cm-bc-999{
+  background: #999;
+}
+.cm-bc-ddd{
+  background: #ddd;
+}
+//字体大小
+.cm-fs-020{
+  font-size: 0.20rem;
+}
+.cm-fs-022{
+  font-size: 0.22rem;
+}
+.cm-fs-024{
+  font-size: 0.24rem;
+}
+.cm-fs-026{
+  font-size: 0.26rem;
+}
+.cm-fs-028{
+  font-size: 0.28rem;
+}
+.cm-fs-030{
+  font-size: 0.30rem;
+}
+.cm-fw-bold{
+  font-weight: bold;
+}
+.cm-fw-height{
+  line-height: 0.4rem;
+}
+//图片尺寸
+.cm-img-04{
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.cm-img-05{
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.cm-img-06{
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.cm-img-08{
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.cm-img-10{
+  width: 1rem;
+  height: 1rem;
+}
+.cm-img-12{
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.cm-img-14{
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.cm-img-16{
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.cm-img-banner{
+  width: 100%;
+  height: 4rem;
+}
+//边框样式
+.cm-border-ddd{
+  border:1px solid #ddd;
+}
+.cm-border-bottom-ddd{
+  border-bottom: 1px solid #ddd;
+}
+.cm-border-top-eee{
+  border-top: 1px solid #eee;
+}
+.cm-border-bottom-eee{
+  border-bottom: 1px solid #eee;
+}
+//圆角样式
+.cm-border-radius-10{
+  border-radius: 0.1rem;
+}
+.cm-border-radius-half{
+  border-radius: 50%;
+}
+
+.cm-space-line{
+  height: 0.18rem;
+  background: #eee;
+}
+//按钮样式
+.cm-btn-main{
+  background: @theme-color;
+  padding: 0.05rem 0.2rem;
+  color:#fff;
+  border-radius: 0.1rem;
+}
+.cm-btn-main-higher{
+  background: @theme-color;
+  padding: 0.05rem 0.2rem;
+  color:#fff;
+  border-radius: 0.1rem;
+}
+.cm-btn-border-333{
+  padding: 0.05rem 0.2rem;
+  border: 1px solid #333;
+  color: #333;
+  border-radius: 0.1rem;
+}
+.cm-btn-border-main{
+  padding: 0.05rem 0.2rem;
+  border: 1px solid @theme-color;
+  color: @theme-color;
+  border-radius: 0.1rem;
+}
+.cm-btn-border-999{
+  padding: 0.05rem 0.2rem;
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 0.1rem;
+}
+//底部悬浮定位
+.cm-bottom-position{
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: 999;
+  width:100%;
+  display:flex;
+  align-items: center;
+  background: #fff;
+  padding:0.18rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

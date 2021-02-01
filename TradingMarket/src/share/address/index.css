@@ -1,0 +1,83 @@
+.s-address {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+}
+.s-address .s-address-wrapper {
+  margin-top: 25%;
+  background: #fff;
+  border-radius: 10px;
+}
+.s-address .s-address-wrapper .s-address-title {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  padding: 10px;
+}
+.s-address .s-address-wrapper .s-address-title .s-address-title-left,
+.s-address .s-address-wrapper .s-address-title .s-address-title-right {
+  width: 15px;
+  height: 15px;
+}
+.s-address .s-address-wrapper .s-address-title .s-address-title-text {
+  color: #333;
+}
+.s-address .s-address-wrapper .s-address-city {
+  padding-top: 10px;
+  margin: 0 10px;
+}
+.s-address .s-address-wrapper .s-address-city .s-address-city-text {
+  color: #999;
+  font-size: 12px;
+}
+.s-address .s-address-wrapper .s-address-city .s-address-city-list .s-address-city-item {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 13px;
+}
+.s-address .s-address-wrapper .s-address-already {
+  margin: 0 10px;
+}
+.s-address .s-address-wrapper .s-address-already .s-address-already-item {
+  padding: 10px 0;
+  font-size: 13px;
+}
+.s-address .s-address-wrapper .s-address-already .s-address-already-item-active {
+  padding: 10px 0;
+  font-size: 13px;
+  color: #cc0000;
+}
+.s-address .s-address-wrapper .s-address-select {
+  padding: 10px;
+  min-height: 100vh;
+  background: #f5f5f9;
+}
+.s-address .s-address-wrapper .s-address-select .s-address-select-text {
+  color: #999;
+  font-size: 12px;
+}
+.s-address .s-address-wrapper .s-address-select .s-address-select-list .s-address-select-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.s-address .s-address-wrapper .s-address-select .s-address-select-list .s-address-select-wrapper .s-address-select-item {
+  padding: 10px;
+  font-size: 13px;
+}
+.s-address .s-address-wrapper .s-address-select .s-address-select-list .s-address-select-wrapper .s-address-select-item-active {
+  padding: 10px;
+  font-size: 13px;
+  color: #cc0000;
+}
+.s-address .s-address-wrapper .s-address-select .s-address-select-list .s-address-select-wrapper .s-address-select-item-checked {
+  width: 15px;
+  height: 15px;
+}
+/*# sourceMappingURL=index.css.map */

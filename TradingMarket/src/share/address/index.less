@@ -1,0 +1,98 @@
+@import '../default';
+@prefixCls:s-address;
+.@{prefixCls}{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 999;
+  background: rgba(0,0,0,0.5);
+  .@{prefixCls}-wrapper{
+    margin-top: 25%;
+    background: @bc-white;
+    border-radius: @size-10;
+    .@{prefixCls}-title{
+      display: flex;
+      border-bottom:1px solid @c-eee;
+      justify-content: space-between;
+      padding: @size-10;
+      .@{prefixCls}-title-left,.@{prefixCls}-title-right{
+        width: (@size-20)-5;
+        height: (@size-20)-5;
+      }
+      .@{prefixCls}-title-text{
+        color:@c-333;
+      }
+    }
+    .@{prefixCls}-city{
+      padding-top:@size-10;
+      margin:0 @size-10;
+      .@{prefixCls}-city-text{
+        color:@c-999;
+        font-size:@size-12;
+      }
+      .@{prefixCls}-city-list{
+        .@{prefixCls}-city-item{
+          display: inline-block;
+          width:25%;
+          text-align: center;
+          padding: @size-10 0;
+          font-size: (@size-12)+1;
+        }
+      }
+    }
+    .@{prefixCls}-already{
+      margin:0 @size-10;
+      .@{prefixCls}-already-item{
+        padding: @size-10 0;
+        font-size: (@size-12)+1;
+      }
+      .@{prefixCls}-already-item-active{
+        padding: @size-10 0;
+        font-size: (@size-12)+1;
+        color: @c-main;
+      }
+    }
+    .@{prefixCls}-select{
+      padding:@size-10;
+      min-height: 100vh;
+      background: @bc-body;
+      .@{prefixCls}-select-text{
+        color: @c-999;
+        font-size: @size-12;
+      }
+      .@{prefixCls}-select-list{
+        .@{prefixCls}-select-wrapper{
+          display: flex;
+          justify-content:space-between;
+          align-items: center;
+          .@{prefixCls}-select-item{
+            padding:@size-10;
+            font-size: (@size-12)+1;
+          }
+          .@{prefixCls}-select-item-active{
+            padding:@size-10;
+            font-size:(@size-12)+1;
+            color:@c-main;
+          }
+          .@{prefixCls}-select-item-checked{
+            width: (@size-20)-5;
+            height: (@size-20)-5;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

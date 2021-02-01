@@ -1,0 +1,40 @@
+.s-button {
+  display: flex;
+  justify-content: center;
+}
+.s-button-btn {
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #3f743e;
+  border-radius: 10px;
+  color: #3f743e;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.s-button-active {
+  background-color: #eee;
+}
+.s-button-btn-fill {
+  height: 40px;
+  line-height: 40px;
+  background: #3f743e;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.s-button-btn-half {
+  height: 40px;
+  line-height: 40px;
+  background: #3f743e;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  width: 48%;
+}
+/*# sourceMappingURL=index.css.map */

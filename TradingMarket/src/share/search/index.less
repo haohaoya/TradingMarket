@@ -1,0 +1,58 @@
+@import '../default';
+@prefixCls:s-search;
+
+.@{prefixCls}{
+  height: @size-40+5;
+  .@{prefixCls}-layout{
+    display:flex;
+    align-items: center;
+    position: fixed;
+    left:0;
+    background:@bc-main;
+    right: 0;
+    padding:0 10px;
+    z-index: 99;
+    height: @size-40+5;
+    .@{prefixCls}-content-left{
+      display:flex;
+      width: 100%;
+      .@{prefixCls}-search-icon{
+        width:@size-14;
+        height: @size-14;
+        position: absolute;
+        top:50%;
+        transform: translate(50%,-50%);
+      }
+      .@{prefixCls}-form{
+        width: 100%;
+      }
+      .@{prefixCls}-input{
+        background:@bc-white;
+        border:1px solid #ddd;
+        border-radius: @size-20;
+        height: @size-30;
+        padding:@size-10 @size-10 @size-10 @size-20+5;
+        width: 100%;
+        margin-right: @size-10;
+        font-size:@size-14;
+      }
+      .@{prefixCls}-input::-webkit-input-placeholder{
+        color:@c-ccc;
+      }
+      .@{prefixCls}-close-icon{
+        width:@size-14;
+        height: @size-14;
+        position:absolute;
+        top:50%;
+        right:@size-40+5;
+        transform: translate(-50%,-50%);
+      }
+    }
+    .@{prefixCls}-right-icon{
+      margin-left: @size-10;
+      width:@size-20;
+      height: @size-20;
+
+    }
+  }
+}

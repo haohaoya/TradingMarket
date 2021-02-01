@@ -1,0 +1,40 @@
+@import '../default';
+@prefixCls:s-tab-bottom;
+
+.@{prefixCls}{
+  height:@size-50;
+  .@{prefixCls}-position-fixed{
+    display:flex;
+    height:@size-50;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    z-index: 1000;
+  }
+  .@{prefixCls}-tab{
+    color:#999;
+    font-size:@size-14;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  .@{prefixCls}-tab-active{
+    color:#3f743e;
+    font-size:@size-14;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  .@{prefixCls}-icon{
+    width:(@size-20)+2;
+  }
+  .@{prefixCls}-span{
+    font-size:@size-12;
+    margin-top:3px;
+  }
+}

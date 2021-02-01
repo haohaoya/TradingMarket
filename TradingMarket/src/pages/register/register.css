@@ -1,0 +1,31 @@
+.register-relative{
+    position: relative;
+}
+.register-input{
+    width:1.6rem;
+    height: 1.6rem;
+    opacity: 0;
+}
+.register-again,.register-input-box{
+    width:1.6rem;
+    border-radius: 50%;
+    background:#ffffff;
+    border:1px solid #ddd;
+    margin:auto;
+    height:1.5rem;
+    color:#ddd;
+}
+.register-input-box:before,.register-input-box:after{
+    content:"";
+    height:0.5rem;
+    width:0.05rem;
+    background:#ddd;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.register-input-box:after{
+    height: 0.05rem;
+    width: 0.5rem;
+}
