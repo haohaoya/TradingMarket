@@ -1,10 +1,10 @@
 import React from 'react';
 import './login.css';
-import account from '../../images/login/account.png';
-import password from '../../images/login/password.png';
-import defaultAvatar from '../../images/login/avatar.jpg';
-import {Title,List,Input,Button} from "../../share";
-import {getData,goNext,checkParam} from "../../utils";
+import account from '../../../images/account/account.png';
+import password from '../../../images/account/password.png';
+import defaultAvatar from '../../../images/account/avatar.jpg';
+import {Title,List,Input,Button} from "../../../share";
+import {getData,goNext,checkParam} from "../../../utils";
 import {Toast} from "antd-mobile";
 export default class Login extends React.Component{
     constructor(props) {
@@ -38,8 +38,9 @@ export default class Login extends React.Component{
                 successCB:(res)=>{
                     var token = res.result.token;
                     //登录成功之后将个人信息缓存到本地，并进入首页
-                    localStorage.setItem("userInfo",JSON.stringify(res.result));
-                    localStorage.setItem("token",token);
+                    sessionStorage.setItem("userInfo",JSON.stringify(res.result));
+                    sessionStorage.setItem("token",token);
+
                     goNext(this,'index');
                 }
             })
@@ -58,7 +59,7 @@ export default class Login extends React.Component{
                     <List>
                         <Input
                             src={account}
-                            placeholder=" 请输入账号 "
+                            placeholder=" 请输入手机号 "
                             value={this.state.mobile}
                             onChange={(val)=>this.change({mobile: val})}
                             style={{textAlign:'left'}}

@@ -1,0 +1,21 @@
+.detail-line {
+    display: inline-block;
+    padding: 0.1rem 0;
+    border-bottom: 1px solid #3f743e;
+}
+.detail-fill {
+    height: 1rem;
+}
+.detail-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    padding: 0 0.2rem;
+    background: #fff;
+}
+.detail-replay {
+    margin-left: 0.58rem;
+}
+

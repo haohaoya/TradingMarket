@@ -1,9 +1,10 @@
 import React from 'react';
-import publish from '../../images/index/publish.png';
+import search from '../../images/index/search.png';
 import {Carousel,ListView} from "antd-mobile";
 import {Search,Type,TabBottom} from "../../share";
 import {getData,goNext} from "../../utils";
 import './index.css'
+import Config from "../../envConfig";
 export default class Index extends React.Component {
     constructor(props) {
         super(props);
@@ -22,6 +23,7 @@ export default class Index extends React.Component {
             hasMore:true,//是否已经加载完成
             bannerList:[],//定义初始化轮播图数组
             statusText:" 加载中 "//定义上拉加载判断状态，3种状态：加载种、加载完成、暂无数据
+
         }
     }
 
@@ -33,7 +35,7 @@ export default class Index extends React.Component {
         this.key = "";
         this.initData = [];
         this.setState({
-            dataSource:this.dataSource.cloneWithRows(this.initData),
+            dataSource:this.state.dataSource.cloneWithRows(this.initData),
             hasMore:true,
             statusText:" 加载中 "
         });
@@ -42,7 +44,7 @@ export default class Index extends React.Component {
 
     //点击某一商品，进入商品详情页面
     goDetail(item){
-        goNext(this,"indexDetail",item);
+        goNext(this,"productDetail",item);
     }
 
     //点击进入商品发布页面
@@ -142,6 +144,9 @@ export default class Index extends React.Component {
         this.setState({isLoading:true},()=>this.getProductList());
     }
 
+    banner(url){
+        window.location.href=url;
+    }
     //渲染页面
     render() {
         var arr=[];
@@ -160,7 +165,7 @@ export default class Index extends React.Component {
                             <span className="cm-c-999 cm-fs-022">{rowData.wantNum>0?rowData.wantNum+"人想要":""}</span>
                         </div>
                         <div className="cm-flex cm-ptb-009 cm-border-top-eee cm-ai-c">
-                            <img src={rowData.publishUserAvatar} className="cm-img-04 cm-border-radius-half cm-mr-009" alt=""/>
+                            <img src={rowData.publishUserAvatar} className="cm-img-10 cm-border-radius-half cm-mr-009" alt=""/>
                             <div className="cm-c-333 cm-fs-026">
                                 {rowData.publishUserName}
                             </div>
@@ -174,23 +179,32 @@ export default class Index extends React.Component {
             <div>
                 <Search
                     leftClick = {(val)=>this.getProductListByKey(val)}
-                    rightIcon={publish}
-                    rightClick={()=>this.goPublish()}
+                    rightIcon={search}
+                    rightClick={(val)=>this.getProductListByKey(val)}
                     placeholder="请输入商品关键字"
                     ref="search"
                 />
 
                 <div className="cm-img-banner">
                     {this.state.bannerList.length>0?
-                        <Carousel>
+                        <Carousel autoplay={true} infinite={true} className="" selectedIndex={0}>
                             {
+
                                 this.state.bannerList.map((item,index)=>{
-                                    var productImgs = item.productImgs && item.productImgs.split(",");
                                     return (
-                                        <img src={productImgs[0]} key={index} alt="" className="cm-img-banner"
-                                             onClick={()=>this.goDetail(item.id)}/>
+
+                                        <a href={item.url}>
+                                            <div>
+                                                <img src={item.image} key={index} alt="" className="cm-img-banner"/>
+                                            </div>
+                                        </a>
+
+
                                     )
                                 })
+
+
+
                             }
                         </Carousel>:null
                     }

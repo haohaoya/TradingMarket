@@ -23,7 +23,7 @@ export default class TabBottom extends React.Component{
             [
                 {label:"首页",icon:index,iconAct:indexAct,path:"index"},
                 {label:"发布",icon:publish,iconAct:publishAct,path:"publish"},
-                {label:"消息",icon:msg,iconAct:msgAct,path:"publish"},
+                {label:"消息",icon:msg,iconAct:msgAct,path:"message"},
                 {label:"我的",icon:my,iconAct:myAct,path:"personal"},
             ];
 

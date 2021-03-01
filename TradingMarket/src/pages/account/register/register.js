@@ -1,9 +1,9 @@
 import React from 'react';
 import './register.css';
-import {Title,List,Input,Button} from '../../share';
-import {getData,goNext,isDefine,checkParam} from '../../utils';
+import {Title,List,Input,Button} from '../../../share';
+import {getData,goNext,isDefine,checkParam} from '../../../utils';
 import {Toast} from 'antd-mobile';
-import verifyCode from '../../images/register/verify-code.png';
+import verifyCode from '../../../images/account/verify-code.png';
 
 export default class Register  extends React.Component{
     constructor(props) {
@@ -28,6 +28,29 @@ export default class Register  extends React.Component{
             Toast.info("请输入手机号码");
             return ;
         }
+        if(this.state.getCode !== ' 获取验证码 '){
+            return ;
+        }
+
+        this.setState({getCode:60},()=>{
+            this.timer = setInterval(()=>{
+
+                if(this.state.getCode == 1){
+                    //验证码过60秒，消除定时器
+                    clearInterval(this.timer);
+                    this.setState({
+                        getCode:' 获取验证码 '
+                    })
+                }else{
+                    //验证码倒计时
+                    this.setState({
+                        getCode:--this.state.getCode
+                    })
+                }
+
+            },1000);
+        });
+
         getData({
             method:'post',
             url:'getVerifyCode',
@@ -37,6 +60,7 @@ export default class Register  extends React.Component{
             },
             successCB:(res)=>{
                 //获取了验证码后，把“获取验证码”更改为倒计时数字60，并设置回调函数计时
+                /** 如果等获取验证码接口成功返回后再回调，会有极大的延迟
                 this.setState({getCode:60},()=>{
                     this.timer = setInterval(()=>{
 
@@ -44,7 +68,7 @@ export default class Register  extends React.Component{
                             //验证码过60秒，消除定时器
                             clearInterval(this.timer);
                             this.setState({
-                                getCode:" 获取验证码 "
+                                getCode:' 获取验证码 '
                             })
                         }else{
                             //验证码倒计时
@@ -54,8 +78,8 @@ export default class Register  extends React.Component{
                         }
 
                     },1000);
-
                 });
+                */
 
             }
 
@@ -84,7 +108,6 @@ export default class Register  extends React.Component{
             {value:this.state.confirmPwd,msg:" 请输入确认密码 "},
             {value:this.state.password == this.state.confirmPwd,msg:" 密码与确认密码不一致 "}
         ];
-
         checkParam(arr,()=>{
             //创建form对象，通过append向form对象添加数据
             let params = new FormData();

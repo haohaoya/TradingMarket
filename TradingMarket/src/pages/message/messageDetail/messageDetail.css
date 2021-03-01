@@ -1,0 +1,33 @@
+.detail-chat-height {
+  border-radius: 0.1rem;
+  min-height: 0.4rem;
+  line-height: 0.4rem;
+  padding: 0.1rem;
+}
+.detail-mr-06 {
+  margin-right: 0.6rem;
+}
+.detail-ml-06 {
+  margin-left: 0.6rem;
+}
+.detail-fixed-height {
+  height: 75px;
+}
+.detail-bottom-height {
+  height: 50px;
+}
+.detail-triangle {
+  border: 0.08rem solid transparent;
+  border-left-color: rgba(3f, 74, 3e, 0.5);
+  height: 0.04rem;
+}
+.detail-triangle-right {
+  border: 0.08rem solid transparent;
+  border-right-color: #fff;
+  height: 0.04rem;
+  margin-top: 0.2rem;
+}
+.am-list-body {
+  background-color: #f5f5f9 !important;
+  border: none!important;
+}

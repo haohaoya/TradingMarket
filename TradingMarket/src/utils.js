@@ -27,8 +27,9 @@ export function getData(obj){
         let result = res.data;
         //后端返回999表示未登录或者token过期，需要跳转到登录页面
         if(result.code === 999){
-            window.location.href=Config.serverIp+"login";
-            return;
+            Toast.info(" 请先登录 ");
+            setTimeout(()=>{window.location.href=Config.serverIp+"login";},500);
+            return false;
         }
         //如果定义了成功回调，处理逻辑
         if(obj.successCB){
@@ -66,10 +67,10 @@ export function goNext(that,pathname,state){
 export function prompt(value,msg){
     if(typeof  value === "boolean"){
         if(value){
+            return true;
+        }else{
             Toast.info(msg,1);
             return false;
-        }else{
-            return true;
         }
     }else if(!isDefine(value)){
         Toast.info(msg,1);

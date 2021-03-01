@@ -55,9 +55,20 @@ textarea::-webkit-input-placeholder {
   margin-top: 0.18rem;
   margin-bottom: 0.18rem;
 }
+.cm-mtb-036 {
+  margin-top: 0.36rem;
+  margin-bottom: 0.36rem;
+}
+.cm-mb-036 {
+  margin-bottom: 0.36rem;
+}
 .cm-mlr-018 {
   margin-left: 0.18rem;
   margin-right: 0.18rem;
+}
+.cm-mlr-072 {
+  margin-left: 0.72rem;
+  margin-right: 0.72rem;
 }
 .cm-m-018 {
   margin: 0.18rem;
@@ -68,6 +79,10 @@ textarea::-webkit-input-placeholder {
 .cm-ptb-018 {
   padding-top: 0.18rem;
   padding-bottom: 0.18rem;
+}
+.cm-ptb-036 {
+  padding-top: 0.36rem;
+  padding-bottom: 0.36rem;
 }
 .cm-ptb-009 {
   padding-top: 0.09rem;
@@ -86,6 +101,9 @@ textarea::-webkit-input-placeholder {
 }
 .cm-p-018 {
   padding: 0.18rem;
+}
+.cm-p-036 {
+  padding: 0.36rem;
 }
 .cm-flex {
   display: flex;
@@ -184,6 +202,15 @@ textarea::-webkit-input-placeholder {
 .cm-fs-030 {
   font-size: 0.3rem;
 }
+.cm-fs-060 {
+  font-size: 0.6rem;
+}
+.cm-fs-100 {
+  font-size: 1rem;
+}
+.cm-fs-110 {
+  font-size: 1.1rem;
+}
 .cm-fw-bold {
   font-weight: bold;
 }
@@ -222,9 +249,13 @@ textarea::-webkit-input-placeholder {
   width: 1.6rem;
   height: 1.6rem;
 }
+.cm-img-big {
+  width: 100%;
+  height: 25rem;
+}
 .cm-img-banner {
   width: 100%;
-  height: 4rem;
+  height: 10rem;
 }
 .cm-border-ddd {
   border: 1px solid #ddd;

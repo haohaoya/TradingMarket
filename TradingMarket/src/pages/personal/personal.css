@@ -1,0 +1,37 @@
+.personal-input {
+  width: 1.6rem;
+  height: 1.6rem;
+  opacity: 0;
+}
+.personal-again,
+.personal-input-box {
+  width: 1.6rem;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  margin: 1rem auto auto auto;
+  height: 1.6rem;
+  color: #ddd;
+}
+.personal-input-box:before,
+.personal-input-box:after {
+  content: "";
+  height: 0.5rem;
+  width: 0.05rem;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.personal-input-box:after {
+  height: 0.05rem;
+  width: 0.5rem;
+}
+.personal-btn {
+  background: #3f743e;
+  padding: 0.15rem 0.2rem;
+  color: #fff;
+  border-radius: 0.1rem;
+}
+/*# sourceMappingURL=personal.css.map */

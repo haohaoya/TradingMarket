@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.1",
     "@testing-library/user-event": "^12.2.2",
     "ant-mobile": "0.0.0",
+    "antd": "^4.13.0",
     "antd-mobile": "^2.3.4",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",

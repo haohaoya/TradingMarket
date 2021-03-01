@@ -40,7 +40,7 @@ export default class Address extends React.Component{
                 if(item.type == "city"){
                     item.text = "选择县区";
                 }
-                if(item.typw == "district"){
+                if(item.type == "district"){
                     item.text = "选择街道";
                 }
                 data.push(item);

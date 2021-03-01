@@ -1,6 +1,8 @@
 import React from 'react';
 import right from '../images/list/right.png';
 import {defaultProps} from './defaultProps';
+import './index.css';
+
 export default class ListItem extends React.Component{
     static defaultProps = defaultProps;
     onRightClick(){
@@ -21,7 +23,7 @@ export default class ListItem extends React.Component{
                     <span className={prefixCls+"-item-right-text"}>{rightTitle}</span>
                     {isNotRightIcon ? null :
                         rightIcon?<img src={rightIcon} alt="" className={prefixCls+"-item-right-icon"}/>:
-                            <img src={right} alt="" className={prefixCls+"item-right-icon"}/> }
+                            <img src={right} alt="" className={prefixCls+"-item-right-icon"}/> }
                 </div>
             </div>
         )

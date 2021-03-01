@@ -14,10 +14,17 @@
     display: inline-block;
     vertical-align: top;
 }
+.index-banner-img{
+    margin-bottom: -3rem;
+}
+.index-banner-span{
+    padding-left: 1rem;
+    font-size: 1rem;
 
+}
 .index-img{
     border-top-left-radius: 0.1rem;
     border-top-right-radius: 0.1rem;
-    height: 3.8rem;
+    height: 15rem;
     width: 100%;
 }
